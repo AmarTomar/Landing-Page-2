@@ -1,0 +1,158 @@
+/* General CSS Boilerplate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Add more global styles as needed */
+#main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: red;
+}
+
+#left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+}
+
+#lnav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+}
+
+#lnav a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+}
+#lnavr {
+  /* background-color: red; */
+  width: 366px;
+}
+
+#lnavr .under-line {
+  border-radius: 1.5px;
+  border-bottom: 2.3px solid rgba(128, 128, 128, 0.767);
+}
+#lnavr a {
+  text-transform: uppercase;
+  margin-right: 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#lnavr a i {
+  font-size: 14px;
+  color: royalblue;
+}
+
+#left #text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#left #text-center h1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+#text-center p {
+  opacity: 0.5;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 18px 0;
+  line-height: 20px;
+}
+#text-center a {
+  font-size: 15px;
+  font-weight: 800;
+  color: black;
+  border-bottom: 1.8px solid #000;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+  background-color: burlywood;
+}
+
+#rtop {
+  width: 100%;
+  height: 50%;
+  background-color: yellow;
+  display: flex;
+}
+
+#rtopleft {
+  height: 100%;
+  width: 55%;
+  background-color: slategray;
+  background: url("./images/Cactus.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#rtopleft h1 {
+  font-size: 5vw;
+  font-weight: 800;
+  letter-spacing: 0.4vw;
+  position: relative;
+  top: 35%;
+  left: 9.27%;
+}
+
+#rtopright {
+  height: 100%;
+  width: 45%;
+  background-color: red;
+  background: url("./images/oranges.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#rbottom {
+  width: 100%;
+  height: 50%;
+  background-color: springgreen;
+  background: url("./images/plant.jpg");
+  background-position: 0 28%;
+  background-size: cover;
+}
+/* Responsive  */
+@media (max-width: 600px) {
+  #main {
+    flex-direction: column;
+  }
+  #lnavr {
+    /* background-color: red; */
+    width: 100%;
+    text-align: right;
+  }
+  #left {
+    width: 100%;
+  }
+  #right {
+    width: 100%;
+  }
+}
